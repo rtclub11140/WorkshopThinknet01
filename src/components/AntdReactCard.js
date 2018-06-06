@@ -1,0 +1,22 @@
+import React, { Component } from 'react'
+import { Card } from 'antd';
+const { Meta } = Card;
+class AntdReactCard extends Component{
+  render() {
+    return (
+      <div>
+        <Card
+          hoverable
+          style={{ width: 400 }}
+          cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+        >
+          <Meta
+            title="Europe Street beat"
+            description="www.instagram.com"
+          />
+        </Card>
+      </div>
+    )
+  }
+}
+export default AntdReactCard;
